@@ -1,0 +1,170 @@
+.btn-paso,
+.btn-general,
+.btn-informe {
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: flex;
+  font-weight: 500;
+  opacity: 90%;
+  width: 80px;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-paso:hover,
+.btn-general:hover,
+.btn-informe:hover {
+  transform: scale(1.1);
+  opacity: 100%;
+}
+
+.btn-paso {
+  background-color: var(--magenta);
+}
+
+.btn-general {
+  background-color: var(--celeste);
+}
+
+.btn-informe {
+  border: white 1px solid;
+  border-radius: 50px;
+}
+
+.container-principal {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.container-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.container-info h1 {
+  font-size: 40px;
+  margin: 10px 20px;
+}
+.container-info p {
+  font-size: small;
+  margin: 0px 20px;
+  padding: 20px 0%;
+  inline-size: 490px;
+  line-height: 180%;
+}
+
+.container-img {
+  width: 50%;
+
+  display: flex;
+  justify-content: end;
+}
+.container-img img {
+  width: 100%;
+  height: 400px;
+  width: 400px;
+}
+
+.container-botonera {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-botonera-info {
+  margin: 25px 174px;
+}
+
+.container-botonera-info p {
+  font-size: 10px;
+}
+
+.container-botonera-botones {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin: 5px 0px 40px 0px;
+}
+
+.btn-paso-grande,
+.btn-general-grande {
+  padding: 3vh 30vh;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-paso-grande:hover,
+.btn-general-grande:hover {
+  transform: scale(1.04);
+  opacity: 90%;
+  box-shadow: 0px 0px 10px 0px;
+}
+
+.btn-general-grande {
+  background-color: var(--celeste);
+}
+
+.btn-paso-grande {
+  background-color: var(--magenta);
+}
+
+/* MEDIAQUERYS */
+
+@media (min-width: 1815px) {
+  .container-principal {
+    width: 50%;
+  }
+
+  .container-botonera {
+    width: 50%;
+    margin: auto;
+  }
+
+  .container-botonera-info {
+    margin: 0px 20px;
+  }
+
+  .btn-paso-grande,
+  .btn-general-grande {
+    margin-top: 30px;
+    padding: 3vh 27.5vh;
+    border-radius: 20px;
+    border: none;
+  }
+}
+
+@media (max-width: 1350px) {
+  .container-principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  .container-info,
+  .container-img {
+    width: auto;
+    margin: 20px 0px;
+  }
+
+  .container-botonera {
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+  }
+
+  .container-botonera-botones {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px;
+    gap: 25px;
+  }
+}

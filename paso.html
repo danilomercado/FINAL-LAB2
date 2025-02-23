@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/icons/favicon-16x16.png" />
+    <title>Paso | Resultados</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/pages/generales-paso.css" />
+  </head>
+  <body>
+    <div class="alert-container" id="alert-container"></div>
+    <header>
+      <div class="header">
+        <div class="container-logo">
+          <a href="index.html">
+            <img src="../img/Logo_DINE_negativo.png" alt="logo" class="logo" />
+          </a>
+        </div>
+        <div class="container-nav">
+          <div class="container-nav-izq">
+            <select name="year" id="selectPeriodo">
+              <option value="" disabled selected>Año</option>
+            </select>
+            <select name="cargo" id="selectCargo">
+              <option value="" disabled selected>Cargo</option>
+            </select>
+            <select name="distrito" id="selectDistrito">
+              <option value="" disabled selected>Distrito</option>
+            </select>
+            <select name="seccion" id="selectSeccion">
+              <option value="" disabled selected>Seccion</option>
+            </select>
+            <input
+              type="hidden"
+              id="hdSeccionProvincial"
+              name="hdSeccionProvincial"
+            />
+            <button class="btn-filtrar" id="btnFiltrar">Filtrar</button>
+            <a href="generales.html" class="btn-generales">Generales</a>
+            <a href="informes.html" class="btn-informe" id="btnInformes"
+              >Informes</a
+            >
+          </div>
+          <div class="container-nav-der">
+            <a href="index.html" class="btn-inicio">Inicio</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-principal">
+        <h1 id="tituloPrincipal">Elecciones 202? | Paso</h1>
+        <p id="parrafoPrincipal">
+          2021 > Paso > Provisorio > Senadores provinciales > Corrientes
+        </p>
+      </div>
+      <div class="container-secundario">
+        <div class="container-secundario-izq">
+          <button class="btn-add-informe" id="btnAddInforme">
+            + Agregar a informes
+          </button>
+        </div>
+        <div class="container-secundario-der">
+          <!-- Cards -->
+
+          <div class="container-secundario-der-card1">
+            <div class="contianer-card1-logo">
+              <p style="color: white" id="logoMesas">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-airtable"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M3 10v8l7 -3v-2.6z" />
+                  <path d="M3 6l9 3l9 -3l-9 -3z" />
+                  <path d="M14 12.3v8.7l7 -3v-8z" />
+                </svg>
+              </p>
+            </div>
+            <div class="container-card1-info">
+              <h6>Mesas computadas</h6>
+              <p style="color: white" id="mesasComputadas" hidden>2.154</p>
+            </div>
+          </div>
+
+          <div class="container-secundario-der-card2">
+            <div class="contianer-card2-logo">
+              <p style="color: white" id="logoElectores">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-friends"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                  <path
+                    d="M5 22v-5l-1 -1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5"
+                  />
+                  <path d="M17 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                  <path
+                    d="M15 22v-4h-2l2 -6a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1l2 6h-2v4"
+                  />
+                </svg>
+              </p>
+            </div>
+            <div class="container-card2-info">
+              <h6>Electores</h6>
+              <p style="color: white" id="electores" hidden>64.123</p>
+            </div>
+          </div>
+
+          <div class="container-secundario-der-card3">
+            <div class="contianer-card3-logo">
+              <p style="color: white" id="logoParticipacion">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon icon-tabler icons-tabler-filled icon-tabler-circle-percentage"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -20 0l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72m3 12.12a1 1 0 0 0 -1 1v.015a1 1 0 0 0 2 0v-.015a1 1 0 0 0 -1 -1m.707 -5.752a1 1 0 0 0 -1.414 0l-6 6a1 1 0 0 0 1.414 1.414l6 -6a1 1 0 0 0 0 -1.414m-6.707 -.263a1 1 0 0 0 -1 1v.015a1 1 0 1 0 2 0v-.015a1 1 0 0 0 -1 -1"
+                  />
+                </svg>
+              </p>
+            </div>
+            <div class="container-card3-info">
+              <h6>Participacion sobre estructurado</h6>
+              <p style="color: white" id="porcentaje" hidden>62.5%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tablas -->
+
+      <div class="grid-container">
+        <div class="grid-1">
+          <table class="grilla">
+            <thead>
+              <h2 class="titulo-grid">Agrupaciones politicas</h2>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="grid-2">
+          <table class="grilla">
+            <thead>
+              <h2 id="titulo-provincia" class="titulo-grid">Provincia</h2>
+            </thead>
+            <tbody class="container-provincia">
+              <tr>
+                <td id="provincia" class="provincia"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="grid-3">
+          <table class="grilla">
+            <thead>
+              <h2 class="titulo-grid">Resumen de Votos</h2>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="resumen-votos">
+                  <div class="chart-wrap horizontal">
+                    <div
+                      class="grid"
+                      id="resumenVotos"
+                      style="
+                        display: none;
+                        justify-content: center;
+                        margin: auto;
+                        width: 325px;
+                      "
+                    ></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container-footer">
+        <div class="container-footer-img">
+          <img
+            src="../img/icons/Ministerio-del-Interior_pluma.1ab9a7a7.png"
+            alt="ministerio"
+          />
+          <img
+            src="../img/icons/Logo_DINE_negativo.a88f983e.png"
+            alt="dine-neg"
+          />
+          <img src="../img/icons/logos_001-10.4430c8d5.png" alt="001logo" />
+        </div>
+        <div class="container-footer-text">
+          <p>
+            “Resultados Provisorios en base a telegramas recibidos (Art. 43 Ley
+            26571 y Art. 105 Ley 19945). Los porcentajes de las agrupaciones
+            políticas son calculados sobre los votos válidos (PASO) conforme al
+            art. 45 Ley 26.571 y afirmativos (Paso). No se incluyen los votos
+            correspondientes a los electores residentes en el exterior ni
+            privados de la libertad. Al usar este sitio usted acepta los
+            <a href="www.google.com" id="link-footer"
+              >Términos y Condiciones."</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Prueba del componente showAlert.js -->
+
+    <script type="module" src="../js/showAlert.js"></script>
+    <script type="module" src="../js/paso.js"></script>
+  </body>
+</html>

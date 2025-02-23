@@ -1,0 +1,372 @@
+.container-nav {
+  padding: 7.5px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.container-nav-izq {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.container-nav select {
+  margin: 0px 5px;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  width: 80px;
+  background-color: transparent;
+  color: white;
+  font-size: medium;
+}
+.btn-generales,
+.btn-paso,
+.btn-informe {
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  opacity: 90%;
+  width: 80px;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-informe {
+  border: white 1px solid;
+  border-radius: 50px;
+}
+
+.btn-generales:hover,
+.btn-paso:hover,
+.btn-informe:hover {
+  transform: scale(1.1);
+  opacity: 100%;
+}
+
+.btn-filtrar:disabled,
+.btn-add-informe:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+  color: black;
+}
+
+.container-provincia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  margin: auto;
+}
+
+.btn-filtrar:disabled:hover,
+.btn-add-informe:disabled:hover {
+  transform: scale(1);
+  background-color: gray;
+}
+
+.btn-generales {
+  background-color: var(--celeste);
+}
+
+.btn-paso {
+  background-color: var(--magenta);
+}
+
+.btn-inicio {
+  background-color: var(--gris-claro);
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: medium;
+  font-weight: 500;
+  border: white 1px solid;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-inicio:hover {
+  background-color: var(--gris);
+}
+
+.btn-filtrar {
+  color: black;
+  padding: 5px 15px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  width: 80px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: rgb(243, 253, 255);
+}
+
+.btn-filtrar:hover {
+  background-color: var(--gris-claro);
+}
+
+.container-principal {
+  margin: 20px;
+}
+
+.container-principal p {
+  font-size: small;
+  color: var(--fondo-Cabecera);
+}
+
+.container-secundario {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 80px 0px;
+}
+
+.btn-add-informe {
+  border: none;
+  background-color: #bbbbbb;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-add-informe:hover {
+  transform: scale(1.02);
+  background-color: var(--gris-claro);
+}
+
+.container-secundario-der {
+  display: flex;
+  gap: 40px;
+}
+
+.container-card1-info,
+.container-card2-info,
+.container-card3-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.grid-container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin: 60px 0px;
+}
+.sub-titulo {
+  border-bottom: 1px var(--borde-Grilla) solid;
+  padding: 0px 0px 10px 0px;
+}
+
+.grid-1,
+.grid-2,
+.grid-3 {
+  height: 400px;
+  width: 350px;
+  border-radius: 25px;
+  border: 1px var(--borde-Grilla) solid;
+
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.grid-1 tbody {
+  display: block;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.grid-1 tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.grilla {
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.titulo-grid {
+  text-align: center;
+  padding: 20px 0px;
+  margin: 0px 0px 10px 0px;
+  font-weight: bold;
+  border-bottom: 1px var(--borde-Grilla) solid;
+}
+
+/* Personalización del scroll */
+.grid-1 tbody::-webkit-scrollbar,
+.grid-2::-webkit-scrollbar,
+.grid-3::-webkit-scrollbar {
+  width: 10px; /* Ancho del scroll */
+  height: 10px; /* Alto del scroll */
+}
+
+.grid-1 tbody::-webkit-scrollbar-track,
+.grid-2::-webkit-scrollbar-track,
+.grid-3::-webkit-scrollbar-track {
+  background: #fff; /* Fondo del track */
+  border-radius: 10px;
+}
+
+.grid-1 tbody::-webkit-scrollbar-thumb,
+.grid-2::-webkit-scrollbar-thumb,
+.grid-3::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 10px;
+}
+
+.grid-1 tbody::-webkit-scrollbar-thumb:hover,
+.grid-2::-webkit-scrollbar-thumb:hover,
+.grid-3::-webkit-scrollbar-thumb:hover {
+  background: #afafaf; /* Efecto hover */
+  cursor: grab;
+}
+
+.grid-1 tbody::-webkit-scrollbar-thumb:active,
+.grid-2::-webkit-scrollbar-thumb:active,
+.grid-3::-webkit-scrollbar-thumb:active {
+  background: #9b9b9b; /* Efecto hover */
+  cursor: grabbing;
+}
+
+.progress {
+  height: 35px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.progress-bar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: width 0.25s;
+  border-radius: 5px;
+}
+.progress-bar-text {
+  margin-left: 10px;
+  font-weight: bold;
+  color: var(--textos);
+  font-size: 9px;
+}
+option {
+  color: black;
+}
+
+.chart-wrap {
+  --chart-width: 260px;
+  --grid-color: #aaa;
+  --bar-thickness: 25px;
+  --bar-rounded: 3px;
+  --bar-spacing: 10px;
+  font-family: sans-serif;
+  width: var(--chart-width);
+}
+.chart-wrap .title {
+  font-weight: bold;
+  padding: 1.8em 0 2.8em;
+  text-align: center;
+  white-space: nowrap;
+}
+/* cuando definimos el gráfico en horizontal, lo giramos 90 grados */
+.chart-wrap.horizontal .grid {
+  transform: rotate(-90deg);
+}
+.chart-wrap.horizontal .bar::after {
+  /* giramos las letras para horizontal*/
+  transform: rotate(45deg);
+  padding-top: 0px;
+  display: block;
+}
+.chart-wrap .grid {
+  margin-left: 50px;
+  position: relative;
+  padding: 5px 0 5px 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid var(--grid-color);
+  font-size: 10px;
+}
+/* posicionamos el % del gráfico*/
+.chart-wrap .grid::before {
+  font-size: 0.8em;
+  font-weight: bold;
+  content: "0%";
+  position: absolute;
+  left: -0.5em;
+  top: -1.5em;
+}
+.chart-wrap .grid::after {
+  font-size: 0.8em;
+  font-weight: bold;
+  content: "100%";
+  position: absolute;
+  right: -1.5em;
+  top: -1.5em;
+}
+/* giramos las valores de 0% y 100% para horizontal */
+.chart-wrap.horizontal .grid::before,
+.chart-wrap.horizontal .grid::after {
+  transform: rotate(90deg);
+}
+.chart-wrap .bar {
+  width: var(--bar-value);
+  height: var(--bar-thickness);
+  margin: var(--bar-spacing) 0;
+  background-color: var(--bar-color);
+  border-radius: 0 var(--bar-rounded) var(--bar-rounded) 0;
+}
+.chart-wrap .bar:hover {
+  opacity: 0.7;
+}
+.chart-wrap .bar::after {
+  content: attr(data-name);
+  margin-left: 100%;
+  padding: 10px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@media (max-width: 1350px) {
+  .container-principal {
+    text-align: center;
+  }
+
+  .container-secundario {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .container-secundario-der {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .grid-container {
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+
+/* Despues checkear mi pantalla mas grande a ver como queda sin la mediaquery */

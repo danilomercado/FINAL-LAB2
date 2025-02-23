@@ -1,0 +1,11 @@
+{
+  "name": "votacionesargentina",
+  "version": "1.0.0",
+  "description": "TP de laboratio 2 reformulado",
+  "main": "index.html",
+  "scripts": {
+    "test": "dev"
+  },
+  "author": "Ignacio Bastinaelli",
+  "license": "ISC"
+}
