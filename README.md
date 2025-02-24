@@ -1,3 +1,4 @@
-# FINAL LAB2
+# FINAL LAB2 ✏️
 
-[Link](https://final-lab-mercado.netlify.app/)
+# LINK 🧪
+[😃](https://final-lab-mercado.netlify.app/)
